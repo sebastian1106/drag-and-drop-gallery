@@ -1,7 +1,4 @@
-/**
- * Created by sms061987 on 8/30/16.
- */
-
+(function() {
 
 // Json object holding images
 var data = {
@@ -54,8 +51,8 @@ function createGrid() {
 
 var dragSrcEl = null;
 
-function allowDrop(ev) {
-    ev.preventDefault();
+function allowDrop(e) {
+    e.preventDefault();
 }
 
 function drag(e) {
@@ -74,3 +71,5 @@ var cols = document.querySelectorAll('#main-container .inline-container');
     col.addEventListener('dragover', allowDrop, false);
     col.addEventListener('drop', drop, false);
 });
+
+})();

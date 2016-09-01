@@ -1,19 +1,11 @@
 .inline-container {
-    margin: 5px 5px 5px 5px;
-    padding: 0px 15px 0px;
-    /*border: 1px solid #aaaaaa;*/
+    margin: 5px;
     padding: 5px;
     display: inline-block;
 }
 
-#main-container {
+.main-container {
     padding: 50px;
-    /*
-    border: 1px solid #aaaaaa;
-    background-color: silver;
-    background-color: crimson;
-    background-color: black;
-    */
 }
 
 body{
