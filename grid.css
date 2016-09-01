@@ -1,0 +1,14 @@
+#div1 {
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+div {
+    margin: 0 2px 0px 2px;
+    padding: 0px 15px 0px;
+    display: inline-block;
+    border: 1px solid #aaaaaa;
+    padding: 5px;
+}
