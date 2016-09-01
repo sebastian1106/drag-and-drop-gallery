@@ -1,16 +1,15 @@
 /**
  * Created by sms061987 on 8/30/16.
  */
-function allowDrop(ev) {
-    ev.preventDefault();
+
+var dragSrcEl = null;
+
+function drag(e) {
+    dragSrcEl = this;
+    e.dataTransfer.setData('text/html', this.innerHTML);
 }
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+function drop(e) {
+    dragSrcEl.innerHTML = this.innerHTML;
+    this.innerHTML = e.dataTransfer.getData('text/html');
 }
